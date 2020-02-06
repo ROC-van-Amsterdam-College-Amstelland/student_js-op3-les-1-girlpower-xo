@@ -6,38 +6,43 @@ var roodLichtStaatAan = false;
 var oranjeLichtStaatAan = false;
 var groenLichtStaatAan = false;
 
-window.onload = function(){
+window.onload = function () {
     document.getElementById("light-top").innerHTML = stop;
     document.getElementById("light-middle").innerHTML = maybe;
     document.getElementById("light-bottom").innerHTML = go;
 }
 
-function toggleRoodLicht(){
-    if(roodLichtStaatAan == false){
+function toggleRoodLicht() {
+    if (roodLichtStaatAan == false) {
         document.getElementById("light-top").style.backgroundColor = "red";
         roodLichtStaatAan = true;
     }
-    else{
+    else {
         document.getElementById("light-top").style.backgroundColor = "gray";
         roodLichtStaatAan = false;
     }
 }
 
-function toggleOranjeLicht(){
-    if(document.getElementById("light-middle").style.backgroundColor == "gray"){
-        document.getElementById("light-middle").style.backgroundColor = "orange"
+
+function toggleOranjeLicht() {
+    if (oranjeLichtStaatAan == false) {
+        document.getElementById("light-middle").style.backgroundColor = "orange";
+        oranjeLichtStaatAan = true;
     }
-    else{
+    else {
         document.getElementById("light-middle").style.backgroundColor = "gray";
+        oranjeLichtStaatAan = false;
     }
 }
 
-function toggleGroenLicht(){
-    if(document.getElementById("light-bottom").style.backgroundColor == "gray"){
+function toggleGroenLicht() {
+    if (groenLichtStaatAan == false) {
         document.getElementById("light-bottom").style.backgroundColor = "green";
+        groenLichtStaatAan = true;
     }
-    else{
+    else {
         document.getElementById("light-bottom").style.backgroundColor = "gray";
+        groenLichtStaatAan = false;
     }
-    
 }
+
