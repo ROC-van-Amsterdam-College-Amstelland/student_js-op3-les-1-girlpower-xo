@@ -2,25 +2,27 @@ var stop = "rood";
 var maybe = "oranje";
 var go = "groen";
 
-window.onload = function(){
+window.onload = function () {
     document.getElementById("light-top").innerHTML = stop;
     document.getElementById("light-middle").innerHTML = maybe;
     document.getElementById("light-bottom").innerHTML = go;
 
-    // document.getElementById("light-top").style.backgroundColor = "red";
-    // document.getElementById("light-middle").style.backgroundColor = "orange";
-    // document.getElementById("light-bottom").style.backgroundColor = "green";
+
 }
 
-function zetRoodLichtAan(){
-    document.getElementById("light-top").style.backgroundColor = "red";
+function zetRoodLichtAan() {
+    if (document.getElementById("light-top").style.backgroundColor == "gray") {
+        document.getElementById("light-top").style.backgroundColor = "red";
+    }
+    else {
+        document.getElementById("light-top").style.backgroundColor = "gray";
+    }
 }
 
-function zetOranjeLichtAan(){
-     //JOUW CODE HIER
+function zetOranjeLichtAan() {
+    document.getElementById("light-middle").style.backgroundColor = "orange";
 }
 
-function zetGroenLichtAan(){
-    //JOUW CODE HIER
-
+function zetGroenLichtAan() {
+    document.getElementById("light-bottom").style.backgroundColor = "green";
 }
